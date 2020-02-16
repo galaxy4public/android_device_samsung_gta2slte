@@ -5,7 +5,7 @@
     <ActuatorName>dw9808</ActuatorName>
     <FlashName>pmic</FlashName>
     <EepromName>dw9808</EepromName>
-    <ChromatixName>s5k3l6xx_chromatix_j4primelte</ChromatixName>
+    <ChromatixName>s5k3l6xx_chromatix_gta2slte</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>

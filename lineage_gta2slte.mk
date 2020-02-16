@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,19 +22,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Inherit from j4primelte device
+# Inherit from gta2slte device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := samsung
-PRODUCT_DEVICE := j4primelte
+PRODUCT_DEVICE := gta2slte
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_NAME := lineage_j4primelte
-PRODUCT_MODEL := Galaxy J4+
+PRODUCT_NAME := gta2sltedx
+PRODUCT_MODEL := SM-T385
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 TARGET_VENDOR := samsung
-TARGET_VENDOR_PRODUCT_NAME := j4primelte
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="j4primeltedx-user 9 PPR1.180610.011 J415FXXU2BSDM release-keys"
+TARGET_VENDOR_PRODUCT_NAME := gta2slte
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="gta2slte-user 10 M1AJQ T385DXU2BRK3 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "samsung/j4primeltedx/j4primelte:9/PPR1.180610.011/J415FXXU2BSDM:user/release-keys"
+BUILD_FINGERPRINT := samsung/gta2sltedx/gta2slte:10/M1AJQ/T385DXU2BRK3:user/release-keys

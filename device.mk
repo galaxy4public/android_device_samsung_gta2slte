@@ -25,8 +25,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1480
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
 
 # ANT
 PRODUCT_PACKAGES += \
@@ -116,15 +116,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/s5k2p6sx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k2p6sx_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k2x7sp_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k2x7sp_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k3l6xx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6xx_chromatix.xml \
-    $(LOCAL_PATH)/camera/s5k3l6xx_chromatix_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6xx_chromatix_j4primelte.xml \
+    $(LOCAL_PATH)/camera/s5k3l6xx_chromatix_gta2slte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l6xx_chromatix_gta2slte.xml \
     $(LOCAL_PATH)/camera/s5k3p8sp_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3p8sp_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k4h5yc_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4h5yc_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k4hayx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k4hayx_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k5e3yx_f2_2_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e3yx_f2_2_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k5e9yx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e9yx_chromatix.xml \
     $(LOCAL_PATH)/camera/s5k5e9yx_q05ql_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k5e9yx_q05ql_chromatix.xml \
-    $(LOCAL_PATH)/camera/sdm450_camera_j4primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_j4primelte.xml \
-    $(LOCAL_PATH)/camera/sdm450_camera_j6primelte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_j6primelte.xml \
+    $(LOCAL_PATH)/camera/sdm450_camera_gta2slte.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sdm450_camera_gta2slte.xml \
     $(LOCAL_PATH)/camera/sr259_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr259_chromatix.xml \
     $(LOCAL_PATH)/camera/sr544_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr544_chromatix.xml \
     $(LOCAL_PATH)/camera/sr556_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr556_chromatix.xml \
@@ -328,7 +327,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
 
 # Properties
--include device/samsung/j4primelte/vendor_prop.mk
+-include device/samsung/gta2slte/vendor_prop.mk
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -367,7 +366,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    init.j4primelte.rc \
+    init.gta2slte.rc \
     init.wifi.rc \
     fstab.qcom \
     ueventd.qcom.rc
@@ -393,7 +392,7 @@ PRODUCT_COPY_FILES += \
 	
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    device/samsung/j4primelte
+    device/samsung/gta2slte
     
 # Telephony
 PRODUCT_PACKAGES += \
@@ -449,4 +448,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
 # Inherit vendor
-$(call inherit-product, vendor/samsung/j4primelte/j4primelte-vendor.mk)
+$(call inherit-product, vendor/samsung/gta2slte/gta2slte-vendor.mk)
